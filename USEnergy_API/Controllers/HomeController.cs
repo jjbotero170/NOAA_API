@@ -60,6 +60,7 @@ namespace NOAA_API.Controllers
         }
         public IActionResult AboutUs()
         {
+            
             return View();
         }
     }
