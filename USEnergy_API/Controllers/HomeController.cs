@@ -58,5 +58,9 @@ namespace NOAA_API.Controllers
 
             return View(stations);
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }
