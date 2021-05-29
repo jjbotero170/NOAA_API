@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace USEnergy_API.Pages
+namespace NOAA_API.Pages
 {
     public class PrivacyModel : PageModel
     {

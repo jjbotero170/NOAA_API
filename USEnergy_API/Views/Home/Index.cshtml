@@ -1,5 +1,12 @@
-﻿@{
+﻿@model NOAA_API.Models.Stations
+@{
     ViewData["Title"] = "Index";
 }
 
 <h2>Index</h2>
+@foreach (NOAA_API.Models.Station station in Model.results)
+{
+    @(station.id + " " + station.name + " " + station.mindate + " " + station.maxdate + " " + 
+        station.latitude + " " + station.longitude + " " + station.elevation + " " + station.elevationUnit)
+    <br />
+}

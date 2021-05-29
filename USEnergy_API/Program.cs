@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace USEnergy_API
+namespace NOAA_API
 {
     public class Program
     {
