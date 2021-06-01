@@ -1,4 +1,4 @@
-﻿@model NOAA_API.Models.Stations
+﻿@model NOAA_API.Models.ContactForm
 @{
     ViewData["Title"] = "Index";
 }
@@ -12,5 +12,10 @@
 </head>
 <body>
     <h2>Team 6</h2>
+    <form asp-controller="Home" asp-action="ContactUs" method="post">
+        <p><input asp-for="Name" /> <input asp-for="Email" /></p>
+        <p> Result: @Model.Result</p>
+        <button type ="submit">Submit</button>
+    </form>
 </body>
 </html>

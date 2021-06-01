@@ -58,10 +58,18 @@ namespace NOAA_API.Controllers
 
             return View(stations);
         }
-        public IActionResult AboutUs()
+        public IActionResult ContactUs()
         {
-            
-            return View();
+            ContactForm contactform = new ContactForm() { Name = 2, Email = 2 , Result = 4};
+
+            return View(contactform);
+        }
+
+        [HttpPost]
+        public IActionResult ContactUs(ContactForm contactform)
+        {
+            contactform.Result = contactform.Name + contactform.Email;
+            return View(contactform);
         }
     }
 }
