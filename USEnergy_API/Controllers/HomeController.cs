@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Form.Models;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NOAA_API.Models;
 using System;
@@ -61,6 +62,19 @@ namespace NOAA_API.Controllers
         public IActionResult AboutUs()
         {
             return View();
+        }
+        public IActionResult ContactUs()
+        {
+            ContactForm contactform = new ContactForm() { Name = 2, Email = 2 , Result = 4};
+
+            return View(contactform);
+        }
+
+        [HttpPost]
+        public IActionResult ContactUs(ContactForm contactform)
+        {
+            contactform.Result = contactform.Name + contactform.Email;
+            return View(contactform);
         }
     }
 }

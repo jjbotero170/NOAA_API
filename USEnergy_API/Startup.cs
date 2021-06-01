@@ -48,6 +48,7 @@ namespace NOAA_API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
+                endpoints.MapRazorPages();
             });
 
         }
