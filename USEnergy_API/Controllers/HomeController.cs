@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Form.Models;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NOAA_API.Models;
 using System;
