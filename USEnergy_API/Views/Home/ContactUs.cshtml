@@ -1,0 +1,14 @@
+﻿@model Form.Models.ContactForm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>Form Submitted</p>
+
+<form asp-controller="Home" asp-action="Add" method="post">
+    <p><input asp-for="Name" /> + <input asp-for="Email" /></p>
+    <p>Result: @Model.Result</p>
+
+    <button type="submit">Submit</button>
+</form>
