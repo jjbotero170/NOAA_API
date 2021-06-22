@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http//www.noaa-api">
+<head runat="server">
+    <title>
+        NOAA Contact Section
+    </title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="font-family:Cambria">
+            <fieldset style="width:350px">
+                <legend>Contact Us</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <b>Name:</b>
+                        </td>
+                        <td>
+                            <asp:Textbox id="txtName" runat="server"></asp:Textbox>
+                        </td>
+                        <td>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+                                                        runat="server"
+                                                        ErrorMessage="Name is a Mandatory Field"
+                                                        ControltoValidate="txtName"
+                                                        Text="*"
+                                                        ForeColor="Red"></asp:RequiredFieldValidator>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <b>Email:</b>
+                        </td>
+                        <td>
+                            <asp:Textbox id="txtEmail" runat="server"></asp:Textbox>
+                        </td>
+                        <td>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+                                                        runat="server"
+                                                        ErrorMessage="Email is a Mandatory Field"
+                                                        ControltoValidate="txtEmail"
+                                                        Text="*"
+                                                        ForeColor="Red"></asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Subject:</b>
+                        </td>
+                        <td>
+                            <asp:Textbox id="txtSubject" runat="server"></asp:Textbox>
+                        </td>
+                        <td>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+                                                        runat="server"
+                                                        ErrorMessage="Subject is a Mandatory Field"
+                                                        ControltoValidate="txtSubject"
+                                                        Text="*"
+                                                        ForeColor="Red"></asp:RequiredFieldValidator>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <asp:ValidationSummary HeaderText="Please fill mandatory fields"
+                                                   ForeColor="Red" id="ValidationSummary1">
+
+                            </asp:ValidationSummary>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <asp:Button id="Button1" runat="serve" Text="Submit" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+    </form>
+    
